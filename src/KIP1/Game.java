@@ -1,27 +1,42 @@
 package KIP1;
 
+import java.util.Arrays;
+
 public class Game {
 
-
+    private final Gamer a;
+    private final Gamer b;
     private Gamer current;
     private Gamer opponent;
-    private Board board;
+    private final Board board;
+    private Gamer winner ;
 
     public Game(){
+        this(new Board());
+    }
 
-        this.board=new Board(9);
+    public Game(Board board){
+        this.board=board;
+        a=new Gamer("A",Gamer.BLUE_SPADE,1,board);
+        b=new Gamer("B",Gamer.RED_CLUB,-1,board);
+
+        int sum = Arrays.stream(board.getFields()).sum();
+
+        if(sum==0){
+            current = a ;
+            opponent = b ;
+        }else{
+            opponent = a ;
+            current = b ;
+        }
+
+
 
     }
 
     public void loop() {
 
-        current=new Gamer("A",Gamer.BLUE_SPADE,1,board);
-
-        opponent=new Gamer("B",Gamer.RED_CLUB,-1,board);
-
-        Gamer winner = new Gamer("Nobody","x",0,board);
-
-
+        winner = new Gamer("Nobody","x",0,board);
 
         while( !current.hasWon() && !opponent.hasWon() && board.hasFreeFields() ){
 
@@ -32,6 +47,7 @@ public class Game {
                 System.out.println("Spiel zuende, ohne sieger");
                 break;
             }
+
             // Save the winner.
             if(current.hasWon()){winner = current;}
 
@@ -68,6 +84,9 @@ public class Game {
 
     }
 
+    /**
+     * Prints the current board // the current Game State, using the Gamers symbols.
+     */
     private void printCurrentBoard(){
 
         StringBuilder sb = new StringBuilder();
@@ -91,6 +110,33 @@ public class Game {
         }
 
         System.out.println(sb);
+    }
+
+    /**
+     * Returns the Winne of this Game.
+     * @return
+     */
+    public Gamer getWinner(){
+        return winner;
+    }
+
+
+
+    public Gamer getGamerA(){
+        return a;
+    }
+    public Gamer getGamerB(){
+        return b;
+    }
+
+    @Override
+    public String toString() {
+        return "Game{" +
+                "current=" + current +
+                ", opponent=" + opponent +
+                ", board=" + board +
+                ", winner=" + winner +
+                '}';
     }
 }
 

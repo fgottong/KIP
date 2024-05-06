@@ -4,21 +4,57 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ *
+ * Game-board for a simple tic-tac-toe game.
+ * Safes the moves/game state as integer array, with values 1 or -1 for each player or 0 for empty fields.
+ *
+ * @author fabian gottong fabian.gottong@haw-hamburg.de
+ */
 public class Board {
 
     private int[] fields;
     private boolean[] freeFields;
+    private static int size = 3 ;
 
-    public Board(int size){
+    /**
+     * creates a new board with default size 3x3.
+     */
+    public Board(){
+        this(size);
+    }
 
-        fields = new int[size];
-        freeFields = new boolean[size];
+    /**
+     * Creats a new board with size n x n.
+     * @param n length of board edges
+     */
+    public Board(int n){
 
-        for (int i=0;i<size;i++){
+        size = n;
+        fields = new int[size*size];
+        freeFields = new boolean[size*size];
+
+        for (int i=0;i<size*size;i++){
             freeFields[i] = true;
         }
 
-        
+    }
+
+    public Board(int[] aryFields){
+
+        if(aryFields.length!=9){throw new IllegalArgumentException("Array size doesn't fit board size.");}
+
+        this.fields=aryFields;
+
+        freeFields = new boolean[aryFields.length];
+
+        for (int i=0;i<aryFields.length;i++){
+            if(aryFields[i]==0){
+                freeFields[i] = true;
+            }else{
+                freeFields[i] = false;
+            }
+        }
     }
 
     /**

@@ -112,4 +112,13 @@ public class Gamer {
     public String getName(){
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Gamer{" +
+                "name='" + name + '\'' +
+                ", value=" + value +
+                ", symbol='" + symbol + '\'' +
+                '}';
+    }
 }
