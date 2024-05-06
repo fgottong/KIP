@@ -1,0 +1,314 @@
+graph Verzweigungsgrad{
+    graph [labelloc = "t", penwidth = 0];
+    label ="Zustandsgraph \n Suchbaum"
+    
+    rankdir = TB
+    
+    subgraph beschreibung{
+        cluster=true
+        label=<<b>Beschreibung</b>>
+        
+        node[shape=none]
+        level1[label="Startzustand \n leeres Feld"]
+        level2[label="Spieler A \n erster Stein"]
+        level3[label="Spieler B \n erster Stein"]
+        level4[label="Spieler A \n zweiter Stein"]
+        level5[label="•\n•\n•"]
+        level8[label="die ersten 8. Spielzüge\nhaben sehr großen Verzweigungsgrad"]
+        
+        level1--level2--level3--level4--level5--level8[style=invis];
+        //level1--level2--level3--level4--level5--level8[dir=forward,arrowhead=vee];
+
+    }
+
+    
+
+
+    subgraph felder{
+        cluster=true
+        label=<<b>Felder bzw. Zuständer</b>>
+        
+        node [fontname="Consolas"]
+
+   start[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+  </TABLE>>]
+
+z1[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td>x</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+  </TABLE>>]
+
+  z2[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td>x</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+  </TABLE>>]
+
+  z4[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>x</td>
+      </tr>
+  </TABLE>>]
+
+    start--z1;
+    start--z2;
+    z3[shape=none;label="..."]
+    start--z3[label="25-Möglichkeiten"];
+    start--z4;
+
+z5[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>o</td>
+        <td>x</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+  </TABLE>>]
+  z6[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>o</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td>x</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+  </TABLE>>]
+  
+    z1--z5;z1--z6;
+    z7[shape=none;label="..."];
+    z1--z7[label="24-Möglichkeiten"];
+
+    z8[shape=none label =<<TABLE>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>o</td>
+        <td>x</td>
+        <td>x</td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+  </TABLE>>]
+
+    z5--z8;
+    z9[shape=none;label="..."];
+    z5--z9[label="23-Möglichkeiten"];
+    
+    }
+
+}

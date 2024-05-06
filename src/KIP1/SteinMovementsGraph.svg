@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274pt" height="249pt" viewBox="0.00 0.00 273.83 249.07">
+<g id="graph0" class="graph" transform="translate(4,245.07000732421875) scale(1)" data-name="SteinMovements">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-245.07 269.83,-245.07 269.83,4 -4,4" style=""/>
+<text text-anchor="middle" x="132.91" y="-8.2" font-family="Times,serif" font-size="14.00" style="">Mögliche Züge eines einzelnen Steins</text>
+<!-- stein -->
+<g id="node1" class="node" pointer-events="visible" data-name="stein">
+
+<ellipse fill="royalblue" stroke="black" cx="132.91" cy="-132.93" rx="18" ry="18" style=""/>
+</g>
+<!-- f1 -->
+<g id="node2" class="node" pointer-events="visible" data-name="f1">
+
+<polygon fill="none" stroke="black" points="265.83,-150.93 211.83,-150.93 211.83,-114.93 265.83,-114.93 265.83,-150.93" style=""/>
+<text text-anchor="start" x="229.11" y="-129.73" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f1 -->
+<g id="edge1" class="edge" data-name="stein--f1">
+
+<path fill="none" stroke="black" d="M151.36,-132.93C165.23,-132.93 184.7,-132.93 201.75,-132.93" style=""/>
+<polygon fill="black" stroke="black" points="211.45,-132.93 201.45,-137.43 206.45,-132.93 201.45,-132.93 201.45,-132.93 201.45,-132.93 206.45,-132.93 201.45,-128.43 211.45,-132.93 211.45,-132.93" style=""/>
+</g>
+<!-- f2 -->
+<g id="node3" class="node" pointer-events="visible" data-name="f2">
+
+<polygon fill="none" stroke="black" points="261.4,-240.19 207.4,-240.19 207.4,-204.19 261.4,-204.19 261.4,-240.19" style=""/>
+<text text-anchor="start" x="224.67" y="-218.99" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f2 -->
+<g id="edge2" class="edge" data-name="stein--f2">
+
+<path fill="none" stroke="black" d="M146.6,-144.97C161.79,-158.33 186.72,-180.25 206.14,-197.34" style=""/>
+<polygon fill="black" stroke="black" points="213.54,-203.85 203.06,-200.63 209.79,-200.55 206.03,-197.25 206.03,-197.25 206.03,-197.25 209.79,-200.55 209.01,-193.87 213.54,-203.85 213.54,-203.85" style=""/>
+</g>
+<!-- f3 -->
+<g id="node4" class="node" pointer-events="visible" data-name="f3">
+
+<polygon fill="none" stroke="black" points="159.91,-241.07 105.91,-241.07 105.91,-205.07 159.91,-205.07 159.91,-241.07" style=""/>
+<text text-anchor="start" x="123.19" y="-219.87" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f3 -->
+<g id="edge3" class="edge" data-name="stein--f3">
+
+<path fill="none" stroke="black" d="M132.91,-151.17C132.91,-163.76 132.91,-180.73 132.91,-195.02" style=""/>
+<polygon fill="black" stroke="black" points="132.91,-204.85 128.41,-194.85 132.91,-199.85 132.91,-194.85 132.91,-194.85 132.91,-194.85 132.91,-199.85 137.41,-194.85 132.91,-204.85 132.91,-204.85" style=""/>
+</g>
+<!-- f4 -->
+<g id="node5" class="node" pointer-events="visible" data-name="f4">
+
+<polygon fill="none" stroke="black" points="58.43,-240.19 4.43,-240.19 4.43,-204.19 58.43,-204.19 58.43,-240.19" style=""/>
+<text text-anchor="start" x="21.71" y="-218.99" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f4 -->
+<g id="edge4" class="edge" data-name="stein--f4">
+
+<path fill="none" stroke="black" d="M119.23,-144.97C104.04,-158.33 79.11,-180.25 59.69,-197.34" style=""/>
+<polygon fill="black" stroke="black" points="52.28,-203.85 56.82,-193.87 56.04,-200.55 59.79,-197.25 59.79,-197.25 59.79,-197.25 56.04,-200.55 62.76,-200.63 52.28,-203.85 52.28,-203.85" style=""/>
+</g>
+<!-- f5 -->
+<g id="node6" class="node" pointer-events="visible" data-name="f5">
+
+<polygon fill="none" stroke="black" points="54,-150.93 0,-150.93 0,-114.93 54,-114.93 54,-150.93" style=""/>
+<text text-anchor="start" x="17.28" y="-129.73" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f5 -->
+<g id="edge5" class="edge" data-name="stein--f5">
+
+<path fill="none" stroke="black" d="M114.46,-132.93C100.59,-132.93 81.12,-132.93 64.08,-132.93" style=""/>
+<polygon fill="black" stroke="black" points="54.38,-132.93 64.38,-128.43 59.38,-132.93 64.38,-132.93 64.38,-132.93 64.38,-132.93 59.38,-132.93 64.38,-137.43 54.38,-132.93 54.38,-132.93" style=""/>
+</g>
+<!-- f6 -->
+<g id="node7" class="node" pointer-events="visible" data-name="f6">
+
+<polygon fill="none" stroke="black" points="58.43,-61.68 4.43,-61.68 4.43,-25.68 58.43,-25.68 58.43,-61.68" style=""/>
+<text text-anchor="start" x="21.71" y="-40.48" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f6 -->
+<g id="edge6" class="edge" data-name="stein--f6">
+
+<path fill="none" stroke="black" d="M119.23,-120.9C104.04,-107.54 79.11,-85.61 59.69,-68.53" style=""/>
+<polygon fill="black" stroke="black" points="52.28,-62.02 62.76,-65.24 56.04,-65.32 59.79,-68.62 59.79,-68.62 59.79,-68.62 56.04,-65.32 56.82,-72 52.28,-62.02 52.28,-62.02" style=""/>
+</g>
+<!-- f7 -->
+<g id="node8" class="node" pointer-events="visible" data-name="f7">
+
+<polygon fill="none" stroke="black" points="159.91,-60.8 105.91,-60.8 105.91,-24.8 159.91,-24.8 159.91,-60.8" style=""/>
+<text text-anchor="start" x="123.19" y="-39.6" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f7 -->
+<g id="edge7" class="edge" data-name="stein--f7">
+
+<path fill="none" stroke="black" d="M132.91,-114.69C132.91,-102.11 132.91,-85.14 132.91,-70.85" style=""/>
+<polygon fill="black" stroke="black" points="132.91,-61.01 137.41,-71.01 132.91,-66.01 132.91,-71.01 132.91,-71.01 132.91,-71.01 132.91,-66.01 128.41,-71.01 132.91,-61.01 132.91,-61.01" style=""/>
+</g>
+<!-- f8 -->
+<g id="node9" class="node" pointer-events="visible" data-name="f8">
+
+<polygon fill="none" stroke="black" points="261.4,-61.68 207.4,-61.68 207.4,-25.68 261.4,-25.68 261.4,-61.68" style=""/>
+<text text-anchor="start" x="224.67" y="-40.48" font-family="Times,serif" font-style="italic" font-size="14.00" style="">frei</text>
+</g>
+<!-- stein&#45;&#45;f8 -->
+<g id="edge8" class="edge" data-name="stein--f8">
+
+<path fill="none" stroke="black" d="M146.6,-120.9C161.79,-107.54 186.72,-85.61 206.14,-68.53" style=""/>
+<polygon fill="black" stroke="black" points="213.54,-62.02 209.01,-72 209.79,-65.32 206.03,-68.62 206.03,-68.62 206.03,-68.62 209.79,-65.32 203.06,-65.24 213.54,-62.02 213.54,-62.02" style=""/>
+</g>
+</g>
+</svg>

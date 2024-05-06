@@ -1,0 +1,28 @@
+graph SteinMovements{
+        
+        label="Mögliche Züge eines einzelnen Steins"
+        labelloc="b"
+        layout="twopi"
+        normalize=true
+        
+
+        sep="0.75"
+        overlap="false"
+
+        stein[style="filled",shape=circle,label="",root=true,fillcolor=royalblue];
+        node[shape=rectangle,label=<<i>frei</i>>] f1;f2;f3;f4;f5;f6;f7;f8;
+    
+        stein -- f1[dir=forward,arrowhead=vee];
+        stein -- f2[dir=forward,arrowhead=vee];
+        stein -- f3[dir=forward,arrowhead=vee];
+        stein -- f4[dir=forward,arrowhead=vee];
+        stein -- f5[dir=forward,arrowhead=vee];
+        stein -- f6[dir=forward,arrowhead=vee];
+        stein -- f7[dir=forward,arrowhead=vee];
+        stein -- f8[dir=forward,arrowhead=vee];
+    
+        //{node[style="filled",shape=circle,label="",fillcolor=brown];otherStein;}
+        //stein -- otherStein[label="blocked",color=white];
+    
+    
+}
